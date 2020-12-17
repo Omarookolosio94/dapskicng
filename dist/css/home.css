@@ -146,6 +146,10 @@
 
 /* Exhibit Session */
 
+section {
+  margin-bottom: 2rem;
+}
+
 section#exhibit {
   position: relative;
   background: url("../asset/night\ worker.jpg") no-repeat;
@@ -155,7 +159,6 @@ section#exhibit {
   background-position: center center;
   overflow: hidden;
   top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .overlay {
@@ -168,12 +171,13 @@ section#exhibit {
 
 section#exhibit .container {
   z-index: 10;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .content {
   width: 60%;
-  padding: 2rem;
-  margin-top: 8rem;
   color: var(--white);
 }
 
@@ -184,7 +188,6 @@ section#exhibit .container {
 
 .sub-lead {
   font-size: var(--lg);
-  line-height: 1;
 }
 
 /* Project Slides */
@@ -205,11 +208,12 @@ section#main {
   margin: 0 5px 0 0;
   padding: 0;
   color: var(--blue-hover);
-  font-weight: bold;
+  font-size: var(--lg);
 }
 
 .section-heading span {
   color: var(--dark-hover);
+  font-size: var(--nor);
 }
 
 /* Value List */
@@ -224,18 +228,25 @@ section#main {
 }
 
 .value .value-detail .value-title {
-  font-size: var(--lg);
+  font-size: var(--nor);
   color: var(--blue);
   line-height: 1;
+}
+
+.project-box {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .project-list {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  height: 400px;
-  margin-bottom: 2rem;
+  height: 550px;
   width: 100%;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -247,22 +258,25 @@ section#main {
   position: relative;
   flex: 0 0 auto;
   margin-right: 15px;
-  height: 400px;
-  width: 250px;
+  height: 550px;
+  width: 400px;
 }
 
 .project-list .project .project-action {
-  width: 30px;
+  width: 100px;
   height: 30px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 10px;
   top: 10px;
+  right: 10px;
   background-color: var(--white);
-  border: 1px solid var(--border);
+}
+
+.project .project-action span {
+  font-size: var(--sm);
+  margin-right: 3px;
 }
 
 .project-list .project .project-action.add-to-like i {
@@ -272,13 +286,13 @@ section#main {
 .project-list .project .project-img {
   border: 1px solid var(--border);
   background-color: var(--border);
-  height: 300px;
+  height: 450px;
   width: 100%;
   overflow: hidden;
 }
 
 .project .project-img img {
-  height: 300px;
+  height: 450px;
   width: 100%;
 }
 
@@ -291,24 +305,17 @@ section#main {
 }
 
 .project .project-detail a.project-location {
-  font-size: var(--sm);
+  font-size: var(--md);
   font-weight: lighter;
   color: var(--dark-hover);
-  padding: 3px 0;
+  padding-top: 5px;
   text-transform: capitalize;
 }
 
 .project .project-detail a.project-info {
-  font-size: var(--sm);
-  font-weight: bold;
+  font-size: var(--nor);
   text-transform: capitalize;
-}
-
-.project .project-status {
-  color: var(--dark-hover);
-  font-size: var(--sm);
-  position: absolute;
-  bottom: 0;
+  margin: 10px 0;
 }
 
 /* Statistics */
@@ -325,10 +332,18 @@ section#main {
   padding: 2rem 1rem;
   margin: 0 0 0 0;
   border: 1px solid var(--border);
+  position: relative;
+  height: 150px;
 }
 
 .stat span {
   font-size: var(--lg);
+}
+
+.stat p {
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
 }
 
 .stat:last-child {
@@ -341,46 +356,44 @@ section#main {
   color: var(--blue);
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-  .hide-sm {
-    display: none;
-  }
-
-  .dropdown.show-sm {
-    display: block;
-  }
-
-  .section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  .value-list {
-    flex-direction: column;
-  }
-  .value {
-    margin: 10px 0;
-  }
-
-  .stat {
-    width: 45%;
-    padding: 1rem;
-    margin: 0 10px 20px 0;
-  }
-
-  .stat span {
-    font-size: var(--lg);
-  }
+.client {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
 }
 
-section#footer {
+.client img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Footer */
+
+footer {
   padding: 2rem 0;
   margin-top: 4rem;
   background-color: var(--blue);
+  color: var(--white);
+}
+
+.footer-detail .footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-detail .footer-list li {
+  margin: 0 5px;
+}
+
+.footer-list li a {
   color: var(--white);
 }
 
@@ -401,21 +414,40 @@ section#footer {
   }
 }
 
+@media (min-width: 992px) {
+  .show-lg {
+    display: block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   section#exhibit {
     height: 60vh;
   }
   .content {
-    margin-top: 5rem;
     width: 100%;
   }
+
   .lead {
     font-size: var(--lg);
-    line-height: 1;
   }
 
   .sub-lead {
     font-size: var(--nor);
+  }
+
+  .value-list {
+    flex-direction: column;
+  }
+  .value {
+    margin: 10px 0;
+  }
+
+  .stat {
+    width: 45%;
+    padding: 1rem;
+    margin: 0 10px 20px 0;
   }
 }
 
@@ -426,12 +458,64 @@ section#footer {
   }
 }
 
-@media (min-width: 992px) {
-  .show-lg {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .lead {
+    font-size: var(--lg);
+  }
+
+  .sub-lead {
+    font-size: var(--nor);
+  }
+
+  .dropdown.show-sm {
     display: block;
   }
-}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-list {
+    display: flex;
+    height: 500px;
+    width: 100%;
+  }
+
+  .project-list .project {
+    height: 500px;
+    width: 250px;
+  }
+
+  .project-list .project .project-img {
+    height: 400px;
+  }
+
+  .project .project-img img {
+    height: 400px;
+  }
+
+  .project .project-detail {
+    padding-top: 5px;
+  }
+
+  .project .project-detail a.project-info {
+    margin: 5px 0;
+  }
+  .stat {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-detail .footer-list {
+    display: block;
+  }
+
+  .footer-detail .footer-list li {
+    margin: 0 0px;
+  }
 }

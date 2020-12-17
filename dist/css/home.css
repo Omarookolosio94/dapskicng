@@ -108,7 +108,13 @@
   ul.navlink
   .nav-item.link-2.dropdown
   .dropdown-content
-  a {
+  a , .navbar
+  .container
+  .nav-list
+  ul.navlink
+  .nav-item.link-2.dropdown
+  .dropdown-content
+  span.no-link{
   margin-left: 0;
   padding: 14px 10px;
   float: none;
@@ -117,6 +123,16 @@
   display: block;
 }
 
+.navbar
+  .container
+  .nav-list
+  ul.navlink
+  .nav-item.link-2.dropdown
+  .dropdown-content
+  span.no-link {
+    padding: 5px 5px; 
+  }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -124,7 +140,7 @@
   top: 75%;
   background-color: var(--white);
   min-width: 200px;
-  padding: 0;
+  padding: 0 10px;
   border: 1px solid var(--border);
   z-index: 1;
 }

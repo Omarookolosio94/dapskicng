@@ -110,7 +110,7 @@
   .dropdown-content
   a {
   margin-left: 0;
-  padding: 12px 8px;
+  padding: 14px 10px;
   float: none;
   color: black;
   text-decoration: none;
@@ -123,7 +123,7 @@
   right: 5%;
   top: 75%;
   background-color: var(--white);
-  min-width: 150px;
+  min-width: 200px;
   padding: 0;
   border: 1px solid var(--border);
   z-index: 1;
@@ -228,7 +228,7 @@ section#main {
 }
 
 .value .value-detail .value-title {
-  font-size: var(--nor);
+  font-size: var(--lg);
   color: var(--blue);
   line-height: 1;
 }
@@ -320,6 +320,27 @@ section#main {
 
 /* Statistics */
 
+section.stats {
+  position: relative;
+  background: url("../asset/construction.jpg") no-repeat;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  top: 2rem;
+}
+
+section.stats .container {
+  z-index: 10;
+}
+
+section.stats .section-heading .heading-text,
+section.stats .section-heading span,
+section.stats p.stats-summary {
+  color: var(--white);
+}
+
 .stat-box {
   display: flex;
   justify-content: space-around;
@@ -331,6 +352,7 @@ section#main {
   width: 20%;
   padding: 2rem 1rem;
   margin: 0 0 0 0;
+  color: var(--white);
   border: 1px solid var(--border);
   position: relative;
   height: 150px;
@@ -348,13 +370,13 @@ section#main {
 
 .stat:last-child {
   background: var(--blue);
-  color: var(--white);
   border-color: var(--blue);
+  color: var(--white);
 }
 
-.stat:not(:last-child) span {
-  color: var(--blue);
-}
+/* .stat:not(:last-child) span {
+  color: var(--white);
+} */
 
 .client-list {
   display: flex;
@@ -378,8 +400,6 @@ section#main {
 footer {
   padding: 2rem 0;
   margin-top: 4rem;
-  background-color: var(--blue);
-  color: var(--white);
 }
 
 .footer-detail .footer-list {
@@ -390,12 +410,13 @@ footer {
 }
 
 .footer-detail .footer-list li {
-  margin: 0 5px;
+  margin: 10px;
+  /* border: 1px solid red; */
 }
 
-.footer-list li a {
+/* .footer-list li a {
   color: var(--white);
-}
+} */
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
@@ -448,6 +469,10 @@ footer {
     width: 45%;
     padding: 1rem;
     margin: 0 10px 20px 0;
+  }
+
+  section.stats {
+    height: 90vh;
   }
 }
 
@@ -513,9 +538,10 @@ footer {
 
   .footer-detail .footer-list {
     display: block;
+    text-align: center;
   }
 
-  .footer-detail .footer-list li {
-    margin: 0 0px;
+  section.stats {
+    height: 125vh;
   }
 }

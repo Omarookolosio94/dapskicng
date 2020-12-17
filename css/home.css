@@ -319,6 +319,9 @@ section#main {
 }
 
 /* Statistics */
+section.project-section {
+  position: relative;
+}
 
 section.stats {
   position: relative;
@@ -532,6 +535,10 @@ footer {
   .project .project-detail a.project-info {
     margin: 5px 0;
   }
+
+  section.stats {
+    height: 125vh;
+  }
   .stat {
     padding: 1rem 0.5rem;
   }
@@ -539,9 +546,5 @@ footer {
   .footer-detail .footer-list {
     display: block;
     text-align: center;
-  }
-
-  section.stats {
-    height: 125vh;
   }
 }

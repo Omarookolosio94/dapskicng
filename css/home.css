@@ -108,13 +108,14 @@
   ul.navlink
   .nav-item.link-2.dropdown
   .dropdown-content
-  a , .navbar
+  a,
+.navbar
   .container
   .nav-list
   ul.navlink
   .nav-item.link-2.dropdown
   .dropdown-content
-  span.no-link{
+  span.no-link {
   margin-left: 0;
   padding: 14px 10px;
   float: none;
@@ -130,8 +131,8 @@
   .nav-item.link-2.dropdown
   .dropdown-content
   span.no-link {
-    padding: 5px 5px; 
-  }
+  padding: 5px 5px;
+}
 
 .dropdown-content {
   display: none;
@@ -336,10 +337,6 @@ section#main {
 
 /* Statistics */
 
-section.stats {
-  bac
-}
-
 .stat-box {
   display: flex;
   justify-content: space-around;
@@ -398,7 +395,6 @@ section.stats {
 footer {
   padding: 2rem 0;
   margin-top: 4rem;
-
 }
 
 .footer-detail .footer-list {

@@ -23,7 +23,6 @@ section#service-header {
 }
 
 section.service-section {
-  /* border: 1px solid red; */
   margin-bottom: 4rem;
 }
 
@@ -61,6 +60,38 @@ section.service-section {
 .service-image img {
   height: 100%;
   width: 49%;
+}
+
+section.service-action {
+  padding-top: 2rem;
+}
+
+.action-box {
+  background: url("../asset/workers.jpg") no-repeat;
+  background-color: var(--blue);
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-box span {
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  padding: 4rem;
+}
+
+.action-box .btn {
+  padding: 4rem;
+}
+
+.action-box .service-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 12px 14px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -103,4 +134,16 @@ section.service-section {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .action-box {
+    flex-direction: column;
+  }
+  .action-box span {
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .action-box .btn {
+    height: 1rem;
+  }
 }

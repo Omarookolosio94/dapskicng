@@ -490,7 +490,7 @@ section#service-header {
 
 .service-keynote h3 {
   color: var(--blue);
-  font-size: var(--lg);
+  font-size: var(--xd);
 }
 
 section.service-section {
@@ -563,7 +563,9 @@ section.service-section {
 }
 
 .project-item-detail .project-item-title {
-  margin: 2rem 0;
+  margin-top: 1rem;
+  font-size: var(--xd);
+  margin-bottom: 2rem;
   line-height: 1;
 }
 

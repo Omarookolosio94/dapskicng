@@ -668,13 +668,6 @@ section.service-section {
   margin-bottom: 2rem;
 }
 
-.testimonal .testimonal-details {
-  position: absolute;
-  bottom: 3rem;
-  width: 100%;
-  text-align: center;
-}
-
 .testimonal .testimonal-details .name {
   font-weight: bold;
   margin: 0;

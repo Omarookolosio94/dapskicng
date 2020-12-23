@@ -263,6 +263,14 @@ section#main {
   font-size: var(--nor);
 }
 
+.mission .section-heading {
+  padding: 0;
+}
+
+.mission blockquote {
+  margin: 2rem auto;
+}
+
 /* Value List */
 .value-list {
   display: flex;
@@ -763,7 +771,6 @@ section.contact {
 }
 
 .social-box {
-  /* border: 1px solid var(--border); */
   width: 38%;
   display: flex;
   padding: 2rem 1rem;

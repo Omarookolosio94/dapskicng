@@ -88,6 +88,14 @@
   z-index: -1;
 }
 
+.link-1.active {
+  color: var(--white);
+}
+
+.link-1.active::after {
+  height: calc(100%);
+}
+
 .link-1:hover::after {
   height: calc(100%);
 }
@@ -155,6 +163,15 @@
   a:hover {
   background-color: var(--blue-hover);
   color: var(--white);
+}
+.navbar
+  .container
+  .nav-list
+  ul.navlink
+  .nav-item.link-2.dropdown
+  .dropdown-content
+  a.active {
+  border: 1px solid var(--border);
 }
 
 .dropdown:hover .dropdown-content {
@@ -700,6 +717,74 @@ blockquote::before {
   font-style: normal;
 }
 
+/* CONTACT PAGE */
+.fa-map-marked:before {
+  content: "\f59f";
+}
+
+section.contact {
+  position: relative;
+  margin-top: 6rem;
+}
+
+.contact-box {
+  display: flex;
+}
+
+.contact-box i {
+  font-size: var(--lg);
+  color: var(--blue);
+  margin-right: 5px;
+}
+
+.contact-address {
+  border: 1px solid var(--border);
+  padding: 2rem 1rem;
+  height: 400px;
+  width: 60%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.address-details {
+  color: var(--blue);
+  font-size: var(--lg);
+}
+
+.address-location {
+  margin: 10px 0 20px 0;
+}
+
+.contact-email {
+  margin-bottom: 20px;
+}
+
+.social-box {
+  /* border: 1px solid var(--border); */
+  width: 38%;
+  display: flex;
+  padding: 2rem 1rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-box p {
+  font-size: var(--lg);
+  color: var(--blue);
+}
+
+.contact-social {
+  border: 1px solid var(--border);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* END CONTACT PAGE */
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
   .content {
@@ -810,6 +895,19 @@ blockquote::before {
 
   .about-pic img {
     height: 100%;
+  }
+
+  .contact-box {
+    display: block;
+  }
+
+  .social-box,
+  .contact-address {
+    width: 100%;
+  }
+
+  .contact-address {
+    margin-bottom: 4rem;
   }
 }
 

@@ -178,6 +178,17 @@ section#exhibit {
   top: 2rem;
 }
 
+section#exhibit.about-page {
+  position: relative;
+  background: url("../asset/about_bg.jpg") no-repeat;
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  top: 2rem;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -201,6 +212,8 @@ section#exhibit .container {
 .lead {
   font-size: var(--exd);
   font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1;
 }
 
 .sub-lead {
@@ -516,6 +529,7 @@ section.service-section {
   color: var(--blue);
   font-size: var(--xd);
   margin-bottom: 2rem;
+  line-height: 1;
 }
 
 .service-box.service-box.reverse .service-detail {
@@ -592,6 +606,107 @@ section.service-section {
 
 /* END OF PROJECT */
 
+/* ABOUT PAGE */
+.content.about-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-gallery {
+  /* border: 1px solid red; */
+  margin: 4rem 0;
+}
+
+.about-gallery .about-pic {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-pic img {
+  width: 100%;
+}
+
+.about-testimonals .section-heading {
+  padding: 0;
+  margin: 0;
+}
+
+.testimonal-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 300px;
+  margin: 3rem 0;
+  width: 100%;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonal-list::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonal-list .testimonal {
+  position: relative;
+  border: 1px solid var(--border);
+  flex: 0 0 auto;
+  margin-right: 15px;
+  height: 300px;
+  padding: 1rem;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonal-list .testimonal:last-child {
+  margin-right: 0px;
+}
+
+.testimonal .testimonal-text {
+  margin-bottom: 2rem;
+}
+
+.testimonal .testimonal-details {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.testimonal .testimonal-details .name {
+  font-weight: bold;
+  margin: 0;
+  color: var(--blue);
+}
+
+.testimonal .testimonal-details .position {
+  color: var(--dark-hover);
+  font-size: var(--sm);
+}
+
+/* END OF ABOUT PAGE */
+
+blockquote {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  margin: 4rem auto;
+  font-size: var(--lg);
+  color: var(--blue);
+  line-height: 150%;
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 15px;
+  left: -35px;
+  font-size: 60px;
+  font-style: normal;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
   .content {
@@ -611,6 +726,10 @@ section.service-section {
   .service-image img {
     height: 100%;
     width: 100%;
+  }
+
+  .testimonal-list .testimonal {
+    width: 48%;
   }
 }
 
@@ -684,6 +803,20 @@ section.service-section {
 
   .project-section-item {
     width: 100%;
+  }
+
+  .about-gallery {
+    height: 300px;
+  }
+
+  .about-gallery .about-pic {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .about-pic img {
+    height: 100%;
   }
 }
 
@@ -770,5 +903,9 @@ section.service-section {
 
   .service-keynote {
     width: 100%;
+  }
+
+  .testimonal-list .testimonal {
+    width: 98%;
   }
 }

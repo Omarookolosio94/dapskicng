@@ -195,17 +195,6 @@ section#exhibit {
   top: 2rem;
 }
 
-section#exhibit.about-page {
-  position: relative;
-  background: url("../asset/about_bg.jpg") no-repeat;
-  height: 80vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  top: 2rem;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -214,7 +203,7 @@ section#exhibit.about-page {
   background: rgba(0, 0, 0, 0.6);
 }
 
-section#exhibit .container {
+.overlay .container {
   z-index: 10;
   display: flex;
   height: 100%;
@@ -235,6 +224,79 @@ section#exhibit .container {
 
 .sub-lead {
   font-size: var(--lg);
+}
+
+/* PROJECT HEADERS */
+section.page-headers {
+  position: relative;
+  background: url("../asset/service_3.jpg") no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  top: 2rem;
+  margin-bottom: 0;
+}
+
+section.page-headers.services-header {
+  background: url("../asset/service_2.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+section.page-headers.contact-header {
+  background: url("../asset/service_5.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+section.page-headers.about-header {
+  background: url("../asset/service_4.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+section.page-headers.project-header {
+  background: url("../asset/service_1.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+section.page-headers.legal-header {
+  background: url("../asset/service_1.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-content {
+  width: 100%;
+}
+
+.page-content,
+.page-content a {
+  color: var(--white);
+}
+
+.page-links {
+  padding: 10px 0px;
+  font-size: var(--md);
+}
+
+.page-content .page-description {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: var(--xd);
+  margin-top: 2rem;
+  line-height: 1;
 }
 
 /* Project Slides */
@@ -484,38 +546,39 @@ footer {
   color: var(--blue-hover);
 }
 
-section.page-breadcrumb {
+/* section.page-breadcrumb {
   border-bottom: 1px solid var(--border);
   position: relative;
   padding-top: 6rem;
   padding-bottom: 2rem;
-}
+} */
 
-.breadcrumb_list {
+/* .breadcrumb_list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-flex;
-}
+  width: 100%;
+} */
 
-.breadcrumb_list .breadcrumb_item {
+/* .breadcrumb_list .breadcrumb_item {
   margin-right: 10px;
 }
 
 a.breadcrumb_link:hover {
   color: var(--blue-hover);
-}
+} */
 
-.breadcrumb_list .breadcrumb_item .breadcrumb_link {
+/* .breadcrumb_list .breadcrumb_item .breadcrumb_link {
   padding: 10px 8px;
-}
+} */
 
-.breadcrumb_item .breadcrumb_link .link_icon {
+/* .breadcrumb_item .breadcrumb_link .link_icon {
   color: var(--border);
-}
+} */
 
 /* Service Header */
-section#service-header {
+/* section#service-header {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -529,6 +592,14 @@ section#service-header {
 .service-keynote h3 {
   color: var(--blue);
   font-size: var(--xd);
+} */
+
+.clear-top {
+  margin-top: 6rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
 }
 
 section.service-section {
@@ -573,6 +644,11 @@ section.service-section {
 }
 
 /* PROJECT PAGE */
+
+.project-section {
+  margin-top: 6rem;
+}
+
 .project-section-list {
   /* border: 1px solid green; */
   display: flex;
@@ -792,6 +868,31 @@ section.contact {
 
 /* END CONTACT PAGE */
 
+/* SINGLE PROJECT */
+
+.project-description {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.project-description li {
+  /* border: 1px solid var(--border); */
+  margin-bottom: 2rem;
+}
+.project-description li:last-child {
+  margin-bottom: 0;
+}
+
+.project-description li p {
+  color: var(--blue);
+  margin: 0;
+  font-size: var(--lg);
+}
+
+/* END OF SINGLE PROJECT */
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
   .content {
@@ -915,6 +1016,10 @@ section.contact {
 
   .contact-address {
     margin-bottom: 4rem;
+  }
+
+  .page-content .page-description {
+    width: 100%;
   }
 }
 

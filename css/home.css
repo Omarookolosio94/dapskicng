@@ -23,8 +23,9 @@
   --green: #096133;
   --blue: #4e3e8f;
   --blue-hover: #5a499e;
-  --black: #111111;
-  --dark-hover: #5f5f5f;
+  --black: #212326;
+  --dark-hover: #42474c;
+  --gray: #7c8287;
   --border: #dbe0df;
   --white: #ffffff;
   --red: #d14836;
@@ -39,14 +40,18 @@
   --line-height: 1.5;
   --line-height-sm: 1.33;
   --border-radius: 4px;
+  --light: #d8d8d8;
+  --light-2: #121212;
+  --light-3: #222222;
 }
 
 html[data-theme="light"] {
   --green: #096133;
   --blue: #4e3e8f;
   --blue-hover: #5a499e;
-  --black: #111111;
-  --dark-hover: #5f5f5f;
+  --black: #212326;
+  --dark-hover: #42474c;
+  --gray: #7c8287;
   --border: #dbe0df;
   --white: #ffffff;
   --red: #d14836;
@@ -65,12 +70,13 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --green: #096133;
-  --blue: #4e3e8f;
-  --blue-hover: #5a499e;
-  --black: #ffffff;
-  --dark-hover: #ffffff;
-  --border: #dbe0df;
-  --white: #111111;
+  --blue: #222222;
+  --blue-hover: #222222;
+  --black: #d8d8d8;
+  --dark-hover: #d8d8d8;
+  --gray: #7c8287;
+  --border: #222222;
+  --white: #121212;
   --red: #d14836;
   --green: #42ab9e;
   --sm: 12px;
@@ -479,7 +485,7 @@ h6,
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .container {
@@ -489,7 +495,6 @@ h6,
 
 /* Navbar */
 .navbar {
-  border-bottom: 1px solid var(--border);
   background-color: var(--white);
   position: fixed;
   width: 100%;
@@ -545,6 +550,7 @@ h6,
 .link-1::after {
   content: "";
   background: var(--blue-hover);
+  border-radius: var(--border-radius);
   width: calc(100% + 10px);
   height: 0;
   position: absolute;
@@ -581,7 +587,7 @@ h6,
 .nav-item.dropdown {
   display: none;
   border: 1px solid var(--border);
-  color: var(--blue);
+  color: var(--black);
 }
 
 .navbar
@@ -638,6 +644,18 @@ h6,
   background-color: var(--blue-hover);
   color: var(--white);
 }
+
+[data-theme="dark"]
+  .navbar
+  .container
+  .nav-list
+  ul.navlink
+  .nav-item.link-2.dropdown
+  .dropdown-content
+  a:hover {
+  color: var(--black);
+}
+
 .navbar
   .container
   .nav-list
@@ -657,7 +675,7 @@ h6,
 section {
   margin-bottom: 2rem;
 }
-
+/* 
 section#exhibit {
   position: relative;
   background: url("../asset/night\ worker.jpg") no-repeat;
@@ -667,7 +685,7 @@ section#exhibit {
   background-position: center center;
   overflow: hidden;
   top: 2rem;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -687,12 +705,13 @@ section#exhibit {
 .content {
   width: 60%;
   color: var(--white);
+  text-align: center;
 }
 
 [data-theme="dark"] .content {
   color: var(--dark);
 }
-
+/* 
 .lead {
   font-size: var(--exd);
   font-weight: bold;
@@ -702,7 +721,7 @@ section#exhibit {
 
 .sub-lead {
   font-size: var(--lg);
-}
+} */
 
 /* PROJECT HEADERS */
 section.page-headers {
@@ -723,6 +742,16 @@ section.page-headers.services-header {
   background-size: cover;
   background-position: center center;
 }
+
+section.page-headers.home-header {
+  background: url("../asset/night\ worker.jpg") no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 2rem;
+}
+
 section.page-headers.contact-header {
   background: url("../asset/service_5.jpg") no-repeat;
   background-attachment: fixed;
@@ -801,13 +830,15 @@ section#main {
 .section-heading .heading-text {
   margin: 0 5px 0 0;
   padding: 0;
-  color: var(--blue-hover);
-  font-size: var(--lg);
+  color: var(--black);
+  font-size: var(--nor);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .section-heading span {
   color: var(--dark-hover);
-  font-size: var(--nor);
+  font-size: var(--md);
 }
 
 .mission .section-heading {
@@ -824,14 +855,15 @@ section#main {
 }
 
 .value {
-  border: 1px solid var(--border);
   margin: 5px;
   padding: 2rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
 }
 
 .value .value-detail .value-title {
   font-size: var(--lg);
-  color: var(--blue);
+  color: var(--black);
   line-height: var(--line-height-sm);
 }
 
@@ -878,11 +910,11 @@ section#main {
 
 .project .project-action span {
   font-size: var(--sm);
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .project-list .project .project-action.add-to-like i {
-  color: var(--blue);
+  color: var(--black);
 }
 
 [data-theme="dark"] .project-list .project .project-action.add-to-like i {
@@ -890,16 +922,17 @@ section#main {
 }
 
 .project-list .project .project-img {
-  border: 1px solid var(--border);
   background-color: var(--border);
   height: 450px;
   width: 100%;
   overflow: hidden;
+  border-radius: var(--border-radius);
 }
 
 .project .project-img img {
   height: 450px;
   width: 100%;
+  border-radius: var(--border-radius);
 }
 
 .project .project-detail {
@@ -938,6 +971,7 @@ section#main {
   padding: 2rem 0.5rem;
   margin: 0 0 0 0;
   border: 1px solid var(--border);
+  border-radius: var(--border-radius);
   margin-top: 2rem;
   height: 150px;
 }
@@ -957,7 +991,7 @@ section#main {
 }
 
 .stat:not(:last-child) span {
-  color: var(--blue);
+  color: var(--black);
 }
 
 [data-theme="dark"] .stat:last-child {
@@ -970,15 +1004,15 @@ section#main {
   justify-content: space-around;
 }
 
-.client {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-}
-
+.client,
 .client img {
   width: 150px;
   height: 150px;
+  border-radius: var(--border-radius);
+}
+
+.client {
+  overflow: hidden;
 }
 
 /* contact Box */
@@ -1201,14 +1235,9 @@ section.service-section {
   background-color: var(--white);
   border-radius: var(--border-radius);
 }
-
 .project-list-action span {
   font-size: var(--sm);
   margin-right: 5px;
-}
-
-.project-list .project .project-action.add-to-like i {
-  color: var(--blue);
 }
 
 /* END OF PROJECT */
@@ -1278,7 +1307,7 @@ section.service-section {
 .testimonal .testimonal-details .name {
   font-weight: bold;
   margin: 0;
-  color: var(--blue);
+  color: var(--black);
 }
 
 .testimonal .testimonal-details .position {
@@ -1323,12 +1352,13 @@ section.contact {
 
 .contact-box i {
   font-size: var(--lg);
-  color: var(--blue);
+  color: var(--black);
   margin-right: 5px;
 }
 
 .contact-address {
   border: 1px solid var(--border);
+  border-radius: var(--border-radius);
   padding: 2rem 1rem;
   height: 400px;
   width: 60%;
@@ -1340,8 +1370,10 @@ section.contact {
 }
 
 .address-details {
-  color: var(--blue);
-  font-size: var(--lg);
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .address-location {
@@ -1362,12 +1394,15 @@ section.contact {
 }
 
 .social-box p {
-  font-size: var(--lg);
-  color: var(--blue);
+  font-size: var(--md);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .contact-social {
   border: 1px solid var(--border);
+  border-radius: var(--border-radius);
   padding: 10px 0;
   margin-bottom: 10px;
 }
@@ -1401,10 +1436,10 @@ section.contact {
 }
 
 .about-title {
-  font-size: var(--sm);
+  font-size: var(--md);
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--blue);
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -1446,21 +1481,25 @@ section.contact {
 }
 
 .project-description li {
-  /* border: 1px solid var(--border); */
-  margin-bottom: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
+
 .project-description li:last-child {
   margin-bottom: 0;
 }
 
 .project-description li p {
-  color: var(--blue);
-  margin: 0;
-  font-size: var(--lg);
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #theme-toggle {
   border: 1px solid var(--border);
+  border-radius: var(--border-radius);
   background-color: var(--white);
   position: fixed;
   z-index: 1000;
@@ -1472,6 +1511,12 @@ section.contact {
 
 #theme-toggle i {
   font-size: 20px;
+}
+#theme-toggle:hover {
+  background-color: var(--blue);
+}
+#theme-toggle:hover i {
+  color: var(--white);
 }
 
 #theme-toggle .fa-sun {

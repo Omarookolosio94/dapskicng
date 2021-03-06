@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Mike Dive Ltd Shore Protection/Reclamation At Chevron Inlinic Water Front, Edjeba, Warri",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "name": "Kurutie Shore Protection/Reclamation",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "name": "Ogriagbene State Government Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 4,
+    "name": "Tebegbe Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 5,
+    "name": "Poloko Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 6,
+    "name": "Torugbrnr Zion Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 7,
+    "name": "Otuoke Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 8,
+    "name": "Ajagbodudu Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 9,
+    "name": "Edegbene Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 10,
+    "name": "Mene Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 11,
+    "name": "Ogbeinama School Fencing",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 12,
+    "name": "Adobu Jetty & Waiting Shed",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 13,
+    "name": "Enekorogha Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 14,
+    "name": "Idiarigbe Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 15,
+    "name": "Ogbeinama Jetty & Waiting Shed",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 16,
+    "name": "Bobougbene Solar",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 17,
+    "name": "Jesse Jetty & Waiting Shed",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 18,
+    "name": "Odimodi Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 19,
+    "name": "Enekorogha Jetty",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 20,
+    "name": "Foot Bridge 2nd Ojobo",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 21,
+    "name": "Tower Foundation Piling at Maritime University",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 22,
+    "name": "Bobougbene Concrete Rigid Pavement Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 23,
+    "name": "Kurutie Shore Protection/Reclamation",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 24,
+    "name": "Okuama Jetty/Waiting Shed",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 25,
+    "name": "Okuama Retaining Wall",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 26,
+    "name": "Arubayi Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  },
+  {
+    "id": 27,
+    "name": "Ita Road",
+    "img": "./asset/service_2.jpg",
+    "completed": true
+  }
+]

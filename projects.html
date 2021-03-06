@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="At Dapskic we build world class structures with latest industry trends. Our Projects are delievered timely and are also affordable."
+      content="At Dabskic Dredging and Construction [W/A] Limited, We build world class structures with latest industry trends. Our Projects are delievered timely and are also affordable."
     />
-    <title>Explore Projects Done - Dapskic</title>
+    <title>
+      Explore Projects Done - Dabskic Dredging and Construction [W/A] Limited
+    </title>
     <link rel="icon" href="./asset/dapskic_manifest.svg" type="image/svg+xml" />
 
     <link rel="mask-icon" href="./asset/dapskic_manifest.svg" color="#000000" />
@@ -45,7 +47,7 @@
                     <span>Services</span>
                   </a>
                   <a href="projects.html" class="active">
-                    <span>Projects</span>
+                    <span>Gallery</span>
                   </a>
                   <a href="about.html">
                     <span>About</span>
@@ -70,7 +72,7 @@
 
               <li class="nav-item hide-sm">
                 <a href="projects.html" class="link-1 active">
-                  <span>Projects</span>
+                  <span>Gallery</span>
                 </a>
               </li>
               <li class="nav-item hide-sm">
@@ -98,10 +100,11 @@
               <a href="index.html"> Home </a> <span>&gt;</span>
               <span>Projects</span>
             </div>
-            <p class="page-title">Projects</p>
+            <p class="page-title">Gallery</p>
             <p class="page-description">
-              Take a look inside some of our major projects to see how human
-              ingenuity pushes technical boundaries to safely...
+              Dabskic Dredging and Construction [W/A] Limited Company has worked
+              over many awesome projects over the years. You can check out few
+              of those below.
             </p>
           </div>
         </div>
@@ -110,94 +113,19 @@
 
     <section class="project-section">
       <div class="container">
-        <div class="project-section-list">
-          <div class="project-section-item">
-            <div class="project-list-action add-to-like">
-              <span>In Progress</span>
-              <i class="fas fa-spinner"></i>
-            </div>
-            <a href="project.html">
-              <div class="project-item-img">
-                <img src="./asset/service_5.jpg" alt="project" />
-              </div>
-            </a>
-            <div class="project-item-detail">
-              <h4 class="project-item-title">Osubi 10km Dualization</h4>
-              <a href="project.html" class="project-item-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore numquam minus sed odio eligendi aut! Sapiente et
-                eveniet temporibus provident aliquid, recusandae unde ex
-                doloremque blanditiis, magni architecto enim autem.</a
-              >
-            </div>
-          </div>
-          <div class="project-section-item">
-            <div class="project-list-action add-to-like">
-              <span>In Progress</span>
-              <i class="fas fa-spinner"></i>
-            </div>
-            <a href="project.html">
-              <div class="project-item-img">
-                <img src="./asset/service_4.jpg" alt="project" />
-              </div>
-            </a>
-            <div class="project-item-detail">
-              <h4 class="project-item-title">
-                Edude Estate Development Project
-              </h4>
-              <a href="project.html" class="project-item-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore numquam minus sed odio eligendi aut! Sapiente et
-                eveniet temporibus provident aliquid, recusandae unde ex
-                doloremque blanditiis, magni architecto enim autem.</a
-              >
-            </div>
-          </div>
-          <div class="project-section-item">
-            <div class="project-list-action add-to-like">
-              <span>In Progress</span>
-              <i class="fas fa-spinner"></i>
-            </div>
-            <a href="project.html">
-              <div class="project-item-img">
-                <img src="./asset/service_2.jpg" alt="project" />
-              </div>
-            </a>
-            <div class="project-item-detail">
-              <h4 class="project-item-title">
-                Shoreline Protection PRZ Project
-              </h4>
-              <a href="project.html" class="project-item-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore numquam minus sed odio eligendi aut! Sapiente et
-                eveniet temporibus provident aliquid, recusandae unde ex
-                doloremque blanditiis, magni architecto enim autem.</a
-              >
-            </div>
-          </div>
-          <div class="project-section-item">
-            <div class="project-list-action add-to-like">
-              <span>Completed</span>
-              <i class="fas fa-check-circle"></i>
-            </div>
-            <a href="project.html">
-              <div class="project-item-img">
-                <img src="./asset/service_3.jpg" alt="project" />
-              </div>
-            </a>
-            <div class="project-item-detail">
-              <h4 class="project-item-title">Blizz Index Building</h4>
-              <a href="project.html" class="project-item-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore numquam minus sed odio eligendi aut! Sapiente et
-                eveniet temporibus provident aliquid, recusandae unde ex
-                doloremque blanditiis, magni architecto enim autem.</a
-              >
-            </div>
-          </div>
+        <div id="projects-list-box" class="project-section-list">
+          <!-- Display Projects from Gallery Json -->
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <div class="load-more">
+        <button id="loadMore" class="load-more-btn" onclick="LoadMore(6)">
+          Load More...
+        </button>
+      </div>
+    </div>
 
     <section class="service-action">
       <div class="container">
@@ -214,15 +142,12 @@
       <div class="container">
         <div class="footer-detail">
           <ul class="footer-list">
-            <li>Dapskic &copy; 2020</li>
+            <li>Dabskic &copy; <span id="footer-year"></span></li>
             <li>
               <a href="about.html">About</a>
             </li>
             <li>
-              <a href="service.html">Services</a>
-            </li>
-            <li>
-              <a href="legal.html">Privacy & Legal</a>
+              <a href="services.html">Services</a>
             </li>
             <li>
               <a href="contact.html">Contact</a>
@@ -235,6 +160,12 @@
       <i class="fas fa-moon"> </i>
       <i class="fas fa-sun"> </i>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/index.js"></script>
+    <script src="./js/loadProjects.js"></script>
   </body>
 </html>

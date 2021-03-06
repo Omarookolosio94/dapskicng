@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Niger Delta Development Commission-NDDC",
+    "img": "./asset/nddc.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Income Electric Limited",
+    "img": "./asset/income-electric.png"
+  },
+  {
+    "id": 3,
+    "name": "Delta State Oil Producing Area Development Commission - DESOPADEC",
+    "img": "./asset/desopadec.png"
+  }
+]

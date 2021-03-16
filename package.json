@@ -1,7 +1,7 @@
 {
-  "name": "dapskic",
+  "name": "Dabskic",
   "version": "1.0.0",
-  "description": "Engineering Webite",
+  "description": "Engineering Website",
   "main": "index.js",
   "dependencies": {
     "gh-pages": "^3.1.0"
@@ -23,7 +23,7 @@
     "Vanilla",
     "Js"
   ],
-  "author": "Okolosio Oghenemaro",
+  "author": "Oghenemaro Okolosio",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Omarookolosio94/dapskicng/issues"
